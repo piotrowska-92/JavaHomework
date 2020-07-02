@@ -19,4 +19,12 @@ public class Exercise_6 {
     public static boolean isEven(int value) {
         return value % 2 == 0;
     }
+
+    public static boolean isPolish(String phoneNumber) {
+        if (phoneNumber.startsWith("+48")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
