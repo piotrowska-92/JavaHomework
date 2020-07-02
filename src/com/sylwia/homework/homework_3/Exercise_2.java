@@ -8,13 +8,14 @@ public class Exercise_2 {
 
     public static void main(String[] args) {
         System.out.println("Podaj liczbe");
-        int t = sc.nextInt();
+        String bin = sc.next();
 
-        if (t % 3 == 0){
-            System.out.println( t + " jest podzielna przez 3");
-        }
-        else {
-            System.out.println( t + " nie jest podzielna przez 3");
+        int decimal = Integer.parseInt(bin,2);
+
+        if (decimal % 3 == 0){
+            System.out.println( bin + " jest podzielna przez 3");
+        } else {
+            System.out.println( bin + " nie jest podzielna przez 3");
         }
     }
 }
