@@ -17,10 +17,6 @@ public class Exercise_6 {
     }
 
     public static boolean isEven(int value) {
-        if (value % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return value % 2 == 0;
     }
 }
