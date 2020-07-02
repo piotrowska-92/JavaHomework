@@ -16,11 +16,14 @@ public class Exercise_5 {
 
     public static int binToInt(String binaryValue) {
         int sum = 0;
+        int i = 0;
 
-        for (int i = 0; i < binaryValue.length(); i++) {
+        while (i < binaryValue.length()) {
             if (binaryValue.charAt(i) == '1') {
                 sum += Math.pow(2, binaryValue.length() - 1 - i);
             }
+
+            i++;
         }
 
         return sum;
