@@ -8,14 +8,15 @@ public class Exercise_4 {
     public static void main(String[] args) {
         String binWithMostOnes = "";
         int ones = 0;
+        int i = 1;
 
-        for ( int i = 0; i <5; i++){
+        while ( i++ < 5 ){
             System.out.println("Podaj liczbe");
             String bin = sc.next();
 
             int sum = 0;
-            for (int k = 0; k < bin.length(); k++){
-                sum += Character.getNumericValue(bin.charAt(k));
+            for (char c : bin.toCharArray()) {
+                sum += Character.getNumericValue(c);
             }
 
             if (sum > ones) {
